@@ -1,0 +1,77 @@
+@font-face {
+  font-family: IRANSansWeb;
+  src: url("../font/IRANSansWeb_FaNum.woff2") format("woff2");
+  font-weight: normal;
+}
+/*----------------------------------------------------------*/
+* {
+  font-family: IRANSansWeb, tahoma, Arial;
+}
+
+:root {
+  --pico-font-family-sans-serif: "IRANSansWeb", system-ui,  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, var(--pico-font-family-emoji);
+}
+
+thead {
+  position: sticky;
+  top: 0; /* Stick to the very top */
+  background-color: rgb(219, 234, 254);
+  z-index: 1; /* Ensure it's above the table body */
+}
+a{
+  text-decoration: none;
+}
+
+.left {
+  text-align: left;
+}
+
+.center td {
+  text-align: center;
+}
+
+.herobox {
+	border-radius: 0.5rem;
+	background: ghostwhite;
+	border-bottom: thin solid powderblue;
+  font-weight: bolder;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hovered tr:nth-child(even):hover td,
+.hovered tr:nth-child(odd):hover td {
+    background-color: #e5ffe5;
+    cursor: pointer;
+}
+
+.disabled {
+  color: #aaa;
+}
+
+.label {
+  background:#363636;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.3rem;
+}
+.label.light{
+  background-color:rgb(243, 244, 245);
+  color: rgba(0,0,0,.7);
+}
+.label.danger {
+  background: rgb(254, 226, 226);
+}
+.label.success {
+  background: rgb(209, 250, 229);
+
+}
+.label.info {
+  background: rgb(219, 234, 254);
+}
+.label.warning {
+  background: rgb(254, 243, 199);
+}

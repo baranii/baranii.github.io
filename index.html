@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="rtl">
+	<head>
+		<title> کلاس های مجازی دانشکده فنی شهید منتظری مشهد </title>
+		<meta charset="utf-8">
+		<meta name="description" content="کلاس های مجازی دانشکده فنی شهید منتظری مشهد "/>
+		<link rel="icon" href="logo.webp">
+		<link rel="stylesheet" href="css/pico.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/print.css">
+	</head>
+	<body dir="rtl">
+		<nav class="print-none herobox">
+			<ul>
+				<li>
+					<img src="logo.webp" width="57" height="57">
+					<span>دانشکده فنی شهید منتظری</span>
+				</li>
+			</ul>
+			<ul>
+				<li title="انتخاب گرایش تحصیلی و مشاهده دروس ارائه شده ترم اول کاردانی">
+					<select name="majorSelect" id="majorSelect">
+						<optgroup label="دروس  مقطع کاردانی">
+							<option value="C300">الكتروتكنیك*300 - كاردانی پیوسته</option>
+							<option value="C301">الكترونیك عمومی*301 - كاردانی پیوسته</option>
+							<option value="C302">كامپیوتر نرم افزار*302 - كاردانی پیوسته</option>
+							<option value="C303">عمران*303 - كاردانی پیوسته</option>
+							<option value="C305">معماری*305 - كاردانی پیوسته</option>
+							<option value="C306">تربیت بدنی*306 - كاردانی پیوسته</option>
+							<option value="C314">حرارت مركزی و تهویه مطبوع*314 - كاردانی پیوسته</option>
+							<option value="C316">ریخته گری*316 - كاردانی پیوسته</option>
+							<option value="C317">ساخت و تولید*317 - كاردانی پیوسته</option>
+							<option value="C322">مكاترونیك صنعتی*322 - كاردانی پیوسته</option>
+							<option value="C324">مكانیك خودرو*324 - كاردانی پیوسته</option>
+							<option value="C401">شبكه های كامپیوتری*401 - كاردانی ناپیوسته</option>
+							<option value="C406">تعمیر و نگهداری تجهیزات پزشكی*406 - كاردانی ناپیوسته</option>
+						</optgroup>
+						<optgroup label="دروس  مقطع کارشناسی">
+							<option value="C703">مهندسی حرفه ای ساخت و تولید*703 - كارشناسی ناپیوسته</option>
+							<option value="C705">مهندسی حرفه ای كامپیوتر نرم‌افزار*705 - كارشناسی ناپیوسته</option>
+							<option value="C707">مهندسی حرفه ای مكانیك خودرو*707 - كارشناسی ناپیوسته</option>
+							<option value="C709">مهندسی حرفه ای كنترل*709 - كارشناسی ناپیوسته</option>
+							<option value="C710">مهندسی حرفه ای معماری*710 - كارشناسی ناپیوسته</option>
+							<option value="C711">مهندسی حرفه ای تأسیسات مكانیكی*711 - كارشناسی ناپیوسته</option>
+							<option value="C714">مهندسی حرفه ای الكترونیك كاربردی*714 - كارشناسی ناپیوسته</option>
+							<option value="C741">مربیگری ورزش*741 - كارشناسی ناپیوسته</option>
+							<option value="C742">مهندسی حرفه ای برق قدرت*742 - كارشناسی ناپیوسته</option>
+							<option value="C748">مهندسی حرفه ای عمران *748 - كارشناسی ناپیوسته</option>
+							<option value="C906">مهندسی حرفه ای معماری*906 - كارشناسی پیوسته</option>
+							<option value="C907">مهندسی حرفه ای كامپیوتر*907 - كارشناسی پیوسته</option>
+							<option value="C111">مهندسی تكنولوژی نرم افزار كامپیوتر *111 - كارشناسی ناپیوسته</option>
+							<option value="C170">مهندسی تكنولوژی برق- قدرت*170 - كارشناسی ناپیوسته</option>
+							<option value="C186">مهندسی تكنولوژی الكترونیك*186 - كارشناسی ناپیوسته</option>
+							<option value="C241">مهندسی اجرایی عمران*241 - كارشناسی ناپیوسته</option>
+						</optgroup>
+					</select>
+				</li>
+				<li>
+					<input id="filterInput" type="search" aria-label="Search" placeholder="Search" class="light-table-filter" data-table="order-table" placeholder="جستجو …" style="width: 84%;" />
+				</li>
+			</ul>
+		</nav>
+		<main class="container">
+			<table class="order-table hovered striped" align="center">
+				<thead>
+					<tr>
+						<th> گروه </th>
+						<th> کد </th>
+						<th>  درس </th>
+						<th> زمان </th>
+						<th> کلاس آنلاین استاد </th>
+					</tr>
+				</thead>
+				<tbody id="tableData">
+
+				</tbody>
+			</table>
+		</main>
+	</body>
+	<script type="text/javascript" src="corsi.js" ></script>
+	<script type="text/javascript" src="filtro.js" ></script>
+</html>
