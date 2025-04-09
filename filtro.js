@@ -4,11 +4,15 @@ function renderProf(data){
 function renderCode(data, col){
     return `<small class="label info">${data[col]}</small>`
 }
+function renderClass(data, col){
+    return `<span class="label info">${data[col]}</span>`
+}
 
 const COLUMNS = [
     { index: 0, title: "گروه", field: "prezi" },
     { index: 2, title: "کد", field: "code", render:renderCode },
     { index: 1, title: "درس", field: "title"},
+    { index: 7, title: "کلاس", field: "classroom", render:renderClass},
     { index: 6, title: "زمان", field: "schedule",},
     { index: 4, title: "استاد", field: "professor", render:renderProf }
 ];
